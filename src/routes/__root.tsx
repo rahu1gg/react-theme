@@ -5,7 +5,7 @@ import { Fragment } from 'react/jsx-runtime';
 export const Route = createRootRoute({
   component: () => (
     <Fragment>
-      <ThemeProvider defaultTheme='dark' storageKey='vite-ui-theme'>
+      <ThemeProvider defaultTheme='light' storageKey='vite-theme'>
         <Outlet />
       </ThemeProvider>
     </Fragment>
