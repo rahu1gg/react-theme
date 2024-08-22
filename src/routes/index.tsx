@@ -17,15 +17,12 @@ function Index() {
         Current Theme: <span className='capitalize'>{theme}</span>
       </p>
       <div className='flex items-center justify-center gap-5 mt-5'>
-        {themes
-          .filter((val) => val !== theme)
-          .map((val) => (
-            <Button key={val} className='capitalize' type='button' onClick={() => setTheme(val)} disabled={val === theme}>
-              {val}
-            </Button>
-          ))}
+        {themes.map((val) => (
+          <Button key={val} className='capitalize' type='button' onClick={() => setTheme(val)} disabled={val === theme}>
+            {val}
+          </Button>
+        ))}
       </div>
-      <div className='h-[200vh]'>height</div>
     </div>
   );
 }
